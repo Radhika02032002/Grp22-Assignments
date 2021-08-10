@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsla(150, 89%, 48%, 0.835);
+  color: dimgray;
+}
+.main {
+  max-width: 65%;
+  margin: 20px auto;
+}
+.nav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: dimgray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+}
+img {
+  min-width: 30%;
+  height: 45vh;
+  margin: 0.5rem;
+}
+.intro div {
+  padding: 1.5rem;
+  min-width: 60%;
+}
+.intro {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+.intro span {
+  display: block;
+  color: black;
+  font-size: 30px;
+}
+.about,
+.projects,
+.languages {
+  margin-top: 0.7rem;
+  background-color: white;
+  padding: 1.5rem 2rem;
+}
+h2 {
+  margin-bottom: 0.7rem;
+  color: black;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid rgba(221, 221, 221, 0.883);
+}
+
+.list li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
