@@ -1,0 +1,134 @@
+body {
+  margin: 5vh;
+}
+
+#header {
+  background-color: #ffc72c;
+  border-radius: 20px 20px 0px 0px;
+  padding: 30px 40px;
+  color: #0039a6;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Merienda", cursive;
+  font-size: 40px;
+}
+
+#inputTodo {
+  display: flex;
+  justify-content: space-around;
+}
+
+#input {
+  border-radius: 5px 0 0 5px;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#btn-span {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+
+#submit {
+  margin: 0;
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+}
+
+#submit:hover {
+  background-color: #bbb;
+}
+
+ol {
+  margin-top: 0;
+  padding: 0;
+}
+
+ol li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 20px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ol li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+ol li:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
+
+ol li:hover {
+  background-color: #ddd;
+}
+
+ol li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ol li.checked::before {
+  content: "";
+  position: absolute;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.delete i:hover {
+  color: red;
+}
+
+.edit {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.edit:hover {
+  color: blue;
+}
