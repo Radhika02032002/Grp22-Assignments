@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  width: 60vh;
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+
+#form {
+  margin: 1rem 2.5rem;
+  min-height: 25%;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 2.3vh;
+  border: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: black;
+  font-size: medium;
+}
+
+input {
+  color: aliceblue;
+}
+
+button {
+  background-color: rgba(112, 128, 144, 0.7);
+}
+
+button:hover {
+  background-color: rgba(112, 128, 144, 1);
+}
+
+.info-box {
+  background-color: rgba(245, 255, 250, 0.8);
+  border-radius: 4px;
+  min-height: 55%;
+  margin: 3.5vh 4vh;
+  padding: 2vh;
+}
+
+span {
+  color: midnightblue;
+  display: block;
+  text-align: center;
+  margin: 2vh;
+}
+
+#cityName {
+  font-size: 3.5vh;
+  font-weight: 700;
+}
+
+#temp {
+  font-size: 9vh;
+}
+
+#weather {
+  font-size: 4.5vh;
+  font-weight: 700;
+}
